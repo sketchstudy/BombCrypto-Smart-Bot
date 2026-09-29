@@ -11,8 +11,7 @@
 
 If you download from the site it is important to tick the option "add python
 to path":
-![Check Add python to PATH](https://github.com/mpcabete/BombCrypto-Smart-Bot
-/raw/ee1b3890e67bc30e372359db9ae3feebc9c928d8/readme-images/path.png)
+![Check Add python to PATH](https://github.com/sketchstudy/BombCrypto-Smart-Bot/blob/315ec0ee85a7fb2581a18eedbae95adc724550f5/readme-images/path.png)
 
 ### Download the code as a zip file and extract it.
 
