@@ -478,7 +478,7 @@ def main():
     last_log_is_progress = False
 
     global images
-    TagInit()
+    self.TagInit()
     images = load_images()
 
     if ch['enable']:
