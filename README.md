@@ -87,5 +87,5 @@ If both these conditions are true, it clicks the home button.
 
 ## If you find my work helpful, please consider supporting the project with a small donation. Your support helps me continue developing and improving it. ❤️
 
-### Wallet:
+### BTC Wallet:
 #### bc1qd9hve72m4xcrvh06zlgyngwfzupr47sude76q4
