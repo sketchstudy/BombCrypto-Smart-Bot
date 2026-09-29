@@ -17,15 +17,13 @@ to path":
 
 ### Copy the path of the bot directory:
 
-![caminho](https://github.com/mpcabete/BombCrypto-Smart-Bot
-/raw/main/readme-images/address.png)
+![caminho](https://github.com/sketchstudy/BombCrypto-Smart-Bot/blob/a58f69b128b52289a60e12391fc6b27708f3ace7/readme-images/address.png)
 
 ### Open the terminal.
 
 Press the windows key + R and type "cmd":
 
-![launch terminal](https://github.com/mpcabete/BombCrypto-Smart-Bot
-/raw/main/readme-images/cmd.png)
+![launch terminal](https://github.com/sketchstudy/BombCrypto-Smart-Bot/blob/a58f69b128b52289a60e12391fc6b27708f3ace7/readme-images/cmd.png)
 
 ### cd into the bot directory:
 Type the command:
@@ -34,8 +32,7 @@ Type the command:
 cd <path you copied>
 ```
 
-![cd](https://github.com/mpcabete/BombCrypto-Smart-Bot
-/raw/main/readme-images/cd.png)
+![cd](https://github.com/sketchstudy/BombCrypto-Smart-Bot/blob/a58f69b128b52289a60e12391fc6b27708f3ace7/readme-images/cd.png)
 
 ### Install the dependencies:
 
@@ -44,8 +41,7 @@ pip install -r requirements.txt
 ```
 
   
-![pip](https://github.com/mpcabete/BombCrypto-Smart-Bot
-/raw/main/readme-images/pip.png)
+![pip](https://github.com/sketchstudy/BombCrypto-Smart-Bot/blob/a58f69b128b52289a60e12391fc6b27708f3ace7/readme-images/pip.png)
 
 ### It is finished! Now to run the bot you just need to type:
 
@@ -53,8 +49,7 @@ pip install -r requirements.txt
 python index.py
 ```
 
-![run](https://github.com/mpcabete/BombCrypto-Smart-Bot
-/raw/main/readme-images/run.png)
+![run](https://github.com/sketchstudy/BombCrypto-Smart-Bot/blob/a58f69b128b52289a60e12391fc6b27708f3ace7/readme-images/run.png)
 
 
 # How to use?
