@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-    
 from src.logger import logger, loggerMapClicked
-from cv2 import cv2
+import cv2
 from os import listdir
 from random import randint
 from random import random
@@ -10,6 +10,8 @@ import pyautogui
 import time
 import sys
 import yaml
+import subprocess
+from urllib.request import urlopen
 
 # Load config file.
 stream = open("config.yaml", 'r')
@@ -19,7 +21,7 @@ ch = c['home']
 pause = c['time_intervals']['interval_between_moviments']
 pyautogui.PAUSE = pause
 
-cat = """
+cat = r"""
                                                 _
                                                 \`*-.
                                                  )  _`-.
@@ -36,13 +38,10 @@ cat = """
                                                .*' /  .*' ; .*`- +'  `*'
                                                `*-*   `*-*  `*-*'
 =========================================================================
-========== 💰 Have I helped you in any way? All I ask is a tip! 🧾 ======
-========== ✨ Faça sua boa ação de hoje, manda aquela gorjeta! 😊 =======
+======= 💰 Have I helped you in any way? If so, please donate! 🧾 ======
 =========================================================================
 ======================== vvv BCOIN BUSD BNB vvv =========================
-============== 0xbd06182D8360FB7AC1B05e871e56c76372510dDf ===============
-=========================================================================
-===== https://www.paypal.com/donate?hosted_button_id=JVYSC6ZYCNQQQ ======
+============== bc1qd9hve72m4xcrvh06zlgyngwfzupr47sude76q4 ===============
 =========================================================================
 
 >>---> Press ctrl + c to kill the bot.
